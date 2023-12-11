@@ -15,4 +15,9 @@ internal class Class1
     {
         return $"{name} {tlf} {email}";
     }
+
+    private void SavePerson(string name, int tlf, string email)
+    {
+        // Save person to database
+    }
 }

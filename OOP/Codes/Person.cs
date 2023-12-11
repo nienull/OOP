@@ -23,4 +23,14 @@ internal class Person
     {
         return $"Name: {Name}, Age: {Age}, Address: {Address}";
     }
+
+    public void SavePersonToFile(string fileName)
+    {
+        using (var file = new System.IO.StreamWriter(fileName))
+        {
+            file.WriteLine(Name);
+            file.WriteLine(Age);
+            file.WriteLine(Address);
+        }
+    }
 }

@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using OOP.Codes;
+
+Person john = new("John", 25, "USA");
+Console.WriteLine(john.ToString());

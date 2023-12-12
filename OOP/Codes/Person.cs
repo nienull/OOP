@@ -24,7 +24,6 @@ internal class Person
         return $"Name: {Name}, Age: {Age}, Address: {Address}";
     }
 
-    // Hi eksam!!
     public void SavePersonToFile(string fileName)
     {
         using (var file = new System.IO.StreamWriter(fileName))
